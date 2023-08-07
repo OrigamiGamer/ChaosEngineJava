@@ -4,7 +4,7 @@ public class IEngine {
     IEngine() {
     }
 
-    public boolean Init(HWND hWnd) {
+    public boolean Init() {
         ChaosEngine.Windows.Init();
         return true;
     }
