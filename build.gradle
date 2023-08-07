@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'origami.chaosengine'
+description 'ChaosEngine for Java'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+    implementation 'net.java.dev.jna:jna:5.12.1'
+    implementation 'net.java.dev.jna:jna-platform:5.13.0'
+}
+
+test {
+    useJUnitPlatform()
+}
